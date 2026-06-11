@@ -1,0 +1,47 @@
+.first{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.row{
+    display: flex;
+    align-items: stretch;
+}
+
+.left{
+    background-color: #2A254B;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    padding-right: 98px;
+}
+
+.top{
+    font-family: 'Clash Display';
+    font-size: 32px;
+    line-height: 140%;
+    color: white;
+    margin-bottom: 41px;
+    max-width: 513px;
+}
+
+.button{
+    font-size: 16px;
+    font-family: 'Satoshi';
+    line-height: 150%;
+    color: #FFFFFF;
+    background-color: #F9F9F926;
+    padding: 16px 32px;
+    margin-bottom: 196px;
+}
+
+.bot{
+    color: white;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: 'Satoshi'
+}
+
+.right{
+
+}
