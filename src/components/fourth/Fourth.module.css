@@ -1,19 +1,22 @@
-.third{
-    padding-bottom: 56px;
+.fourth{
+    padding-top: 64px;
 }
 
 .top{
-    margin-top: 80px;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
     font-family: 'Clash Display';
     font-size: 32px;
-    line-height: 100%;
+    line-height: 140%;
     color: #2A254B;
 }
 
 .row{
     display: flex;
     gap: 20px;
+}
+
+.image1{
+    max-width: 630px;
 }
 
 .title{
@@ -29,7 +32,7 @@
     font-family: 'Satoshi';
     font-size: 18px;
     line-height: 150%;
-    color: #2A254B;
+    color: #2A254B;    
 }
 
 .button {
@@ -39,9 +42,9 @@
     color: #2A254B;
     background-color: #F9F9F9;
     padding: 16px 32px;
-    border-radius: 100px;
     border: none;
     cursor: pointer;
     display: block;      
-    margin: 51px auto 0; 
+    margin: 42px auto 0; 
+    margin-bottom: 48px;
 }
