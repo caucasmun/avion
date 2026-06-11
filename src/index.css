@@ -60,7 +60,8 @@
     text-decoration: none; }
   
   ul li {
-    list-style: none; }
+    list-style: none; 
+  }
   
   img {
     vertical-align: top; }
@@ -73,6 +74,12 @@
   h6 {
     font-size: inherit;
     font-weight: inherit; }
+
+  /*-------Container-----*/
+  .container{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
   
   /*-------Fonts---------*/
 

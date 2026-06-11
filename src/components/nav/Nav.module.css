@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+
+.link {
+    color: #726E8D;
+    font-family: 'Satoshi';
+    font-style: 16px;
+}

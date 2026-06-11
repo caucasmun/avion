@@ -1,0 +1,24 @@
+.header {
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-inline: 28px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    width: 16px;
+    height: 16px;
+}
+
+.logo {
+}
+
+.right {
+    display: flex;
+    gap: 16px;
+}
