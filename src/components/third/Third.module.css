@@ -1,0 +1,50 @@
+.third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top{
+    margin-top: 80px;
+    margin-bottom: 33px;
+    font-family: 'Clash Display';
+    font-size: 32px;
+    line-height: 100%;
+    color: #2A254B;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+}
+
+.title{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-family: 'Clash Display';
+    font-size: 20px;
+    line-height: 140%;
+    color: #2A254B;
+}
+
+.price{
+    font-family: 'Satoshi';
+    font-size: 18px;
+    line-height: 150%;
+    color: #2A254B;
+}
+
+.button {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 150%;
+    color: #2A254B;
+    background-color: #F9F9F9;
+    padding: 16px 32px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    display: block;      
+    margin: 51px auto 0; 
+}
