@@ -1,0 +1,123 @@
+.footer {
+  background-color: #2A254B;
+  color: #FFFFFF;
+  padding: 58px 83px 25px 82px;
+}
+
+.rowInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.columns {
+  display: flex;
+  gap: 133px;
+  flex-shrink: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Clash Display';
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.link {
+  font-family: 'Satoshi';
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.link:last-child {
+  margin-bottom: 0;
+}
+
+.newsletter {
+  width: 627px;
+  flex-shrink: 0;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.input::placeholder {
+  font-family: 'Satoshi';
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.button {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 150%;
+  color: #2A254B;
+  background-color: #FFFFFF;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.rowBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-family: 'Satoshi';
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}

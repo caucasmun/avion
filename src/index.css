@@ -1,5 +1,18 @@
 /*Обнуление*/
 
+/* Для всей страницы */
+html, body {
+  scrollbar-width: none; /* Скрывает скроллбар в Firefox */
+  -ms-overflow-style: none; /* Скрывает скроллбар в IE и Edge */
+}
+
+/* Скрывает скроллбар в Chrome, Safari и Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 * {
     padding: 0;
     margin: 0;
