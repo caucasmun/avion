@@ -46,12 +46,12 @@ const Footer = () => {
             <div className={cn.rowBottom}>
                 <p className={cn.copyright}>Copyright 2022 Avion LTD</p>
                 <div className={cn.socials}>
-                    <a href="" className={cn.socialLink}><img src="/footer/Linkedin.png" alt="" className={cn.icon} /></a>
-                    <a href="" className={cn.socialLink}><img src="/footer/Facebook.png" alt="" className={cn.icon} /></a>
-                    <a href="" className={cn.socialLink}><img src="/footer/Instagram.png" alt="" className={cn.icon} /></a>
-                    <a href="" className={cn.socialLink}><img src="/footer/Skype.png" alt="" className={cn.icon} /></a>
-                    <a href="" className={cn.socialLink}><img src="/footer/Twitter.png" alt="" className={cn.icon} /></a>
-                    <a href="" className={cn.socialLink}><img src="/footer/Pinterest.png" alt="" className={cn.icon} /></a>
+                    <a href="" className={cn.socialLink}><img src={`${import.meta.env.BASE_URL}footer/Linkedin.png`} alt="" className={cn.icon} /></a>
+                    <a href="" className={cn.socialLink}><img src={`${import.meta.env.BASE_URL}footer/Facebook.png`} alt="" className={cn.icon} /></a>
+                    <a href="" className={cn.socialLink}><img src={`${import.meta.env.BASE_URL}footer/Instagram.png`} alt="" className={cn.icon} /></a>
+                    <a href="" className={cn.socialLink}><img src={`${import.meta.env.BASE_URL}footer/Skype.png`}alt="" className={cn.icon} /></a>
+                    <a href="" className={cn.socialLink}><img src={`${import.meta.env.BASE_URL}footer/Twitter.png`} alt="" className={cn.icon} /></a>
+                    <a href="" className={cn.socialLink}><img src={`${import.meta.env.BASE_URL}footer/Pinterest.png`} alt="" className={cn.icon} /></a>
                 </div>
             </div>
         </footer>

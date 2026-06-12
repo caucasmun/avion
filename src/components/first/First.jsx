@@ -16,7 +16,7 @@ const First = () => {
                                     using modern web technologies.
                         </p>
                     </div>
-                    <img src="/first/stul.png" alt="" className={cn.right} />
+                    <img src={`${import.meta.env.BASE_URL}first/stul.png`} alt="" className={cn.right} />
                 </div>
             </div>
         </section>

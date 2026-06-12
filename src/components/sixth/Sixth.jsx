@@ -14,7 +14,7 @@ const Sixth = () => {
                     </p>   
                 <button className={cn.button}>Get in touch</button>
                 </div>
-                <img src="sixth/Image.png" alt="" className={cn.right} />
+                <img src={`${import.meta.env.BASE_URL}sixth/Image.png`} alt="" className={cn.right} />
         </div>
       </div>
     </section>
