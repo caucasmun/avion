@@ -1,0 +1,194 @@
+.row {
+    display: flex;
+    gap: 62px;
+}
+
+.right{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.top {
+  font-family: 'Clash Display';
+  font-size: 36px;
+  line-height: 100%;
+  color: #2A254B;
+  margin-bottom: 13px;
+}
+
+.price {
+  font-family: 'Satoshi';
+  font-size: 24px;
+  line-height: 100%;
+  color: #2A254B;
+  margin-bottom: 54px;
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+.descriptionTop {
+  font-family: 'Clash Display';
+  font-size: 16px;
+  line-height: 100%;
+  color: #2A254B;
+  margin-bottom: 16px;
+}
+
+.descriptionText {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #505977;
+  width: 498px;
+  margin-bottom: 20px;
+}
+
+.descriptionList {
+  list-style-type: disc !important; /* Включает круглые маркеры */
+  padding-left: 25px;
+}
+
+
+.listItem {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #505977;
+}
+
+.dimensions {
+}
+
+.dimensionsTop {
+  font-family: 'Clash Display';
+  font-size: 16px;
+  line-height: 100%;
+  color: #2A254B;
+  margin-bottom: 28px;
+}
+
+.metrics {
+  display: flex;
+  gap: 58px;
+  margin-bottom: 40px;
+}
+
+.height {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heightTop {
+  font-family: 'Clash Display';
+  font-size: 14px;
+  line-height: 100%;
+  color: #2A254B;
+}
+
+.heightValue {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #505977;
+}
+
+.width {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.widthTop {
+  font-family: 'Clash Display';
+  font-size: 14px;
+  line-height: 100%;
+  color: #2A254B;
+}
+
+.widthValue {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #505977;
+}
+
+.depth {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.depthTop {
+  font-family: 'Clash Display';
+  font-size: 14px;
+  line-height: 100%;
+  color: #2A254B;
+}
+
+.depthValue{
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #505977;
+}
+
+.amount {
+    display: flex;
+    gap: 170px; 
+    align-items: center;
+    padding-top: 27px;
+}
+
+.counterInput {
+    display: flex;
+    gap: 22px;
+    align-items: center; 
+}
+
+.amountTop {
+  font-family: 'Clash Display';
+  font-size: 16px;
+  line-height: normal;
+  color: #2A254B;    
+}
+
+.counterValue{
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 100%;
+  color: #505977;
+}
+
+.counterBtn {
+  font-family: 'Clash Display';
+  font-size: 16px;
+  line-height: 100%;
+  color: #2A254B;     
+  background: none;  
+  border: none;     
+  padding: 0;      
+  cursor: pointer; 
+}    
+
+.counterControls{
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    background-color: #F9F9F9;
+    padding: 12px 16px;
+}
+
+.button {
+    padding: 16px 32px;
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background-color: #2A254B;
+    border: none; 
+    white-space: nowrap; 
+    flex-shrink: 0; 
+}
