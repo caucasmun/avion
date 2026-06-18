@@ -1,0 +1,171 @@
+/* Общий контейнер всей корзины */
+.shoppingBasket {
+  padding-top: 64px;       /* Внутренний отступ сверху страницы (подставьте свой) */
+  padding-bottom: 48px;    /* Внутренний отступ снизу страницы (подставьте свой) */
+  background-color: #fff;  /* Цвет фона всей страницы корзины */
+}
+
+/* Главный заголовок "Your shopping cart" */
+.title {
+  font-family: 'Clash Display'; /* Название вашего шрифта для заголовка */
+  font-size: 36px;          /* Размер шрифта главного заголовка */
+  color: #2A254B;           /* Основной темный цвет текста */
+  line-height: 140%;        /* Высота строки заголовка (влияет на вертикальный зазор текста) */
+  margin-bottom: 48px;      /* Отступ от нижнего края заголовка до таблицы товаров */
+}
+
+/* Общая обертка таблицы */
+.basket {
+  width: 100%;
+}
+
+/* Строка с названиями колонок (Product, Quantity, Total) */
+.rowTexts {
+  display: grid;
+  /* Сетка: 1-я колонка занимает все свободное место (4fr), 2-я строго 122px под счетчик, 3-я под цену (1fr) */
+  grid-template-columns: 4fr 122px 1fr; 
+  border-bottom: 1px solid #EBE8F4; /* Цвет и толщина горизонтальной линии под шапкой */
+  padding-bottom: 12px;     /* Расстояние от букв Product/Quantity/Total до горизонтальной линии */
+  margin-bottom: 20px;      /* Расстояние от горизонтальной линии до первого товара в списке */
+}
+
+/* Сами тексты "Product", "Quantity", "Total" в шапке */
+.productTitle,
+.productQuantity,
+.productTotal {
+  font-family: 'Satoshi', sans-serif; /* Шрифт для мелких подписей */
+  font-size: 14px;          /* Размер шрифта подписей в шапке */
+  line-height: 140%;
+  color: #2A254B;           /* Цвет букв в шапке */
+  margin: 0;                /* Сброс встроенных браузерных отступов параграфа */
+}
+
+/* Выравнивание слова "Total" по правому краю */
+.rowTexts .productTotal {
+  text-align: right;
+}
+
+/* Контейнер-список, в котором лежат все товары */
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;                /* Вертикальное расстояние (пробел) между строками товаров */
+}
+
+/* Обертка для карточки одного товара */
+.product {
+  width: 100%;
+}
+
+/* Строка товара (содержит внутри блок товара, счетчик и итоговую цену) */
+.productRow {
+  display: grid;
+  /* Сетка должна быть точь-в-точь как у rowTexts выше, чтобы колонки стояли ровно друг под другом */
+  grid-template-columns: 4fr 122px 1fr; 
+  align-items: center;      /* Выравнивание всех трех колонок по центру относительно друг друга по вертикали */
+}
+
+/* Принудительная фиксация ширины кнопки счетчика внутри строки */
+.productRow :global(.counterControls),
+.productRow > div:nth-child(2) {
+  width: 122px;             /* Ширина самого счетчика, которую вы просили (122px) */
+  justify-self: start;      /* Прижимает счетчик к левому краю его колонки */
+}
+
+/* Блок внутри первой колонки: Картинка + Текстовая информация */
+.productMain {
+  display: flex;
+  gap: 24px;                /* Расстояние по горизонтали между картинкой и текстом справа от нее */
+  align-items: flex-start;  /* Выравнивает текст по верхнему краю картинки */
+}
+
+/* Фотография товара */
+.productImage {
+  width: 109px;             /* Точная ширина картинки из макета */
+  height: 134px;            /* Точная высота картинки из макета */
+  object-fit: cover;        /* Защищает картинку от деформации и сплющивания */
+}
+
+/* Обертка для текстов о товаре (Название, Описание, Цена) */
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;                 /* Вертикальный отступ между названием, описанием и ценой товара */
+}
+
+.productName {
+  font-family: 'Clash Display'; 
+  font-size: 20px;        
+  line-height: 140%;       
+  color: #2A254B;           
+  margin: 0;
+}
+
+.productDescription {
+  font-family: 'Satoshi';  
+  font-size: 14px;      
+  line-height: 150%;    
+  color: #2A254B;          
+  max-width: 179px;        
+  margin: 0;
+}
+
+
+.productPrice {
+  font-family: 'Satoshi';
+  font-size: 16px;        
+  color: #2A254B;          
+  margin: 0;
+}
+
+.productRow .productTotal {
+  font-family: 'Satoshi'; 
+  font-size: 18px;         
+  color: #2A254B;         
+  text-align: right;        
+}
+
+.summaryBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;   
+  margin-top: 32px;        
+  border-top: 1px solid #EBE8F4;
+  padding-top: 28px;      
+}
+
+.subtotalRow {
+  display: flex;
+  gap: 16px;               
+  align-items: center;  
+  margin-bottom: 12px;   
+}
+
+.subtotalText {
+  font-family: 'Clash Display';
+  font-size: 20px;         
+  color: #4E4D93;           
+}
+
+.subtotalPrice {
+  font-family: 'Clash Display'; 
+  font-size: 24px;        
+  color: #2A254B;         
+}
+
+.taxNotice {
+  font-family: 'Satoshi';
+  font-size: 14px;          
+  color: #4E4D93;          
+  margin-bottom: 16px;  
+}
+
+.checkoutBtn {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;       
+  color: #FFFFFF;         
+  background-color: #2A254B;
+  padding: 16px 32px;      
+  border: none;            
+  cursor: pointer;          
+}

@@ -41,7 +41,7 @@
 }
 
 .right {
-  width: 720px;
+  width: 50%;
   height: auto; 
   object-fit: cover;
   flex-shrink: 0;

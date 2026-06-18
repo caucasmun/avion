@@ -1,10 +1,10 @@
 import cn from './Third.module.css'
 
-const Third = () => {
+const Third = (props) => {
     return (
         <section className={cn.third}>
             <div className="container">
-                <p className={cn.top}>New ceramics</p>
+                <p className={cn.top}>{props.title}</p>
                 <div className={cn.row}>
                     <div className={cn.item}>
                         <img src={`${import.meta.env.BASE_URL}third/Item1.png`} alt="" className={cn.image} />  

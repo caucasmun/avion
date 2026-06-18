@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 67px;
+    padding-bottom: 79px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Clash Display';
+    font-size: 36px;
+    line-height: 140%;
+    max-width: 704px;
+}

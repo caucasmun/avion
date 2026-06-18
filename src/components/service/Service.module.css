@@ -1,0 +1,44 @@
+.row {
+    display: flex;
+}
+
+.texts {
+    padding-top: 72px;
+    padding-left: 74px;
+    width: 536px;
+}
+
+.title{
+  font-family: 'Clash Display';
+  font-size: 24px;
+  line-height: 140%;
+  color: #2A254B;
+  max-width: 461px;
+  margin-bottom: 25px;
+}
+
+.description{
+    font-family: 'Satoshi';
+    font-size: 14px;
+    line-height: 100%;
+    color: #505977;
+    letter-spacing: 0%;
+}
+
+.button {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 150%;
+  color: #2A254B;
+  background-color: #F9F9F9;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-top: 196px;
+  margin-left: 84px;
+}
+
+.left {
+  width: 50%;
+}

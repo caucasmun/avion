@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Layout from "./pages/Layout"
 import Home from "./pages/Home"
 import ProductList from "./pages/ProductList"
-import Test from "./pages/Test"
+import About from "./pages/About"
+import Shopping from "./pages/Shopping"
+import AllProducts from "./pages/AllProducts"
 
 
 
@@ -14,7 +16,9 @@ function App() {
         <Route path="/avion" element={<Layout />} >
           <Route index element={<Home />}></Route>
           <Route path="/avion/product-list" element={<ProductList />}></Route>
-          <Route path="/avion/test" element={<Test />}></Route>
+          <Route path="/avion/about" element={<About />}></Route>
+          <Route path="/avion/shopping" element={<Shopping />}></Route>
+          <Route path="/avion/all-products" element={<AllProducts />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

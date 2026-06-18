@@ -192,3 +192,7 @@
     white-space: nowrap; 
     flex-shrink: 0; 
 }
+
+ul li {
+ list-style: disc;
+}

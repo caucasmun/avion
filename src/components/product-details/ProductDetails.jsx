@@ -1,17 +1,6 @@
-import { useState } from 'react';
+import CounterBtn from '../counter-btn/CounterBtn';
 import cn from './ProductDetails.module.css';
-
 const ProductDetails = () => {
-  const [quantity, setQuantity] = useState(1);
-
-  const handleIncrement = () => {
-    setQuantity(prev => (prev < 100 ? prev + 1 : prev));
-  };
-
-  const handleDecrement = () => {
-    setQuantity(prev => (prev > 1 ? prev - 1 : prev));
-  };
-
   return (
     <section className={cn['product-details']}>
       <div className="container">
@@ -50,27 +39,7 @@ const ProductDetails = () => {
                 <div className={cn.counter}>
                   <div className={cn.counterInput}>
                     <p className={cn.amountTop}>Amount:</p>
-                    <div className={cn.counterControls}>
-                      <button 
-                        type="button" 
-                        onClick={handleDecrement} 
-                        className={cn.counterBtn}
-                        disabled={quantity <= 1}
-                      >
-                        -
-                      </button>
-                      <p className={cn.counterValue}>
-                        {quantity}
-                      </p>
-                      <button 
-                        type="button" 
-                        onClick={handleIncrement} 
-                        className={cn.counterBtn}
-                        disabled={quantity >= 100}
-                      >
-                        +
-                      </button>
-                    </div>
+                    <CounterBtn />
                   </div>
                 </div>
                 

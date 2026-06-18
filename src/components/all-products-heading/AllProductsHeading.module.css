@@ -1,0 +1,21 @@
+.banner {
+    width: 100%;
+    height: 209px; 
+    background-image: url('all-products-heading/banner.jpg'); 
+    background-size: cover;
+    background-position: center right; 
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end; 
+    padding-bottom: 36px; 
+    box-sizing: border-box;
+}
+
+
+.title {
+    color: #FFFFFF;
+    font-family: 'Clash Display';
+    font-size: 36px;
+    line-height: 140%;
+    padding-left: 80px;
+}

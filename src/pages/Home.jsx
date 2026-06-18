@@ -10,10 +10,9 @@ import Sixth from '../components/sixth/Sixth'
 function Home() {    
   return (
     <> 
-      <Nav></Nav>
       <First></First> 
       <Second></Second>
-      <Third></Third>
+      <Third title="New ceramics"></Third>
       <Fourth></Fourth>
       <Fifth></Fifth>
       <Sixth></Sixth>
