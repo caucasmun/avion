@@ -1,13 +1,11 @@
 import cn from './Nav.module.css';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const navItems = [
-    { title: 'Home', href: '/avion' },
-    { title: 'Product List', href: '/avion/product-list' },
-    { title: 'About', href: '/avion/about' },
-    { title: 'Shopping', href: '/avion/shopping' },
-    { title: 'All Products', href: '/avion/all-products' },
+    { title: 'Home', href: '/' },
+    { title: 'About', href: '/about' },
+    { title: 'All Products', href: '/all-products' },
   ];
 
   return (

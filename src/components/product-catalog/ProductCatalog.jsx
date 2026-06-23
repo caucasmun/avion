@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cn from './ProductCatalog.module.css';
+import productsData from '../data/products.json';
 
 const ProductCatalog = () => {
     const filters = {
@@ -7,20 +9,6 @@ const ProductCatalog = () => {
         prices: ['0 - 100', '101 - 250', '250 +'],
         designers: ['Robert Smith', 'Liam Gallagher', 'Biggie Smalls', 'Thom Yorke']
     };
-
-    const products = [
-    { id: 1, title: 'The Dandy chair', price: '£250', img: 'product-catalog/Parent.png' },
-    { id: 2, title: 'Rustic Vase Set', price: '£155', img: 'product-catalog/Parent (1).png' },
-    { id: 3, title: 'The Silky Stool', price: '£125', img: 'product-catalog/Parent (2).png' },
-    { id: 4, title: 'The Lucy Vase', price: '£95', img: 'product-catalog/Parent (3).png' },
-    { id: 5, title: 'The Hanging Pendant', price: '£175', img: 'product-catalog/Parent (4).png' },
-    { id: 6, title: 'The Vintage Chair', price: '£210', img: 'product-catalog/Parent (5).png' },
-    { id: 7, title: 'Triple Brass Lamp', price: '£320', img: 'product-catalog/Parent (6).png' },
-    { id: 8, title: 'Minimalist Ceramic Vase', price: '£85', img: 'product-catalog/Parent (7).png' },
-    { id: 9, title: 'Modern Yellow Chairs', price: '£399', img: 'product-catalog/Parent (8).png' }
-    ];
-
-
 
     return (
         <div className={cn.catalogContainer}>
@@ -58,14 +46,25 @@ const ProductCatalog = () => {
 
             <main className={cn.mainContent}>
                 <div className={cn.productsGrid}>
-                    {products.map((product) => (
-                        <div key={product.id} className={cn.productCard}>
-                            <div className={cn.imageWrapper}>
-                                <img src={product.img} alt={product.title} className={cn.productImg} />
+                    {productsData.map((product) => (
+                        <Link 
+                            key={product.id} 
+                            to={`/product/${product.id}`} 
+                            className={cn.productCardLink}
+                            style={{ textDecoration: 'none', color: 'inherit' }}
+                        >
+                            <div className={cn.productCard}>
+                                <div className={cn.imageWrapper}>
+                                    <img 
+                                        src={`${import.meta.env.BASE_URL}${product.image}`} 
+                                        alt={product.title} 
+                                        className={cn.productImg} 
+                                    />
+                                </div>
+                                <h4 className={cn.productTitle}>{product.title}</h4>
+                                <p className={cn.productPrice}>{product.currency}{product.price}</p>
                             </div>
-                            <h4 className={cn.productTitle}>{product.title}</h4>
-                            <p className={cn.productPrice}>{product.price}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

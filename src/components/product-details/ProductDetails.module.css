@@ -3,25 +3,34 @@
     gap: 62px;
 }
 
-.right{
+.left {
+    width: 721px;
+    height: 759px;
+    object-fit: cover;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.right {
     padding-top: 40px;
     padding-left: 40px;
+    flex-grow: 1;
 }
 
 .top {
-  font-family: 'Clash Display';
-  font-size: 36px;
-  line-height: 100%;
-  color: #2A254B;
-  margin-bottom: 13px;
+    font-family: 'Clash Display';
+    font-size: 36px;
+    line-height: 100%;
+    color: #2A254B;
+    margin-bottom: 13px;
 }
 
 .price {
-  font-family: 'Satoshi';
-  font-size: 24px;
-  line-height: 100%;
-  color: #2A254B;
-  margin-bottom: 54px;
+    font-family: 'Satoshi';
+    font-size: 24px;
+    line-height: 100%;
+    color: #2A254B;
+    margin-bottom: 54px;
 }
 
 .description {
@@ -29,110 +38,106 @@
 }
 
 .descriptionTop {
-  font-family: 'Clash Display';
-  font-size: 16px;
-  line-height: 100%;
-  color: #2A254B;
-  margin-bottom: 16px;
+    font-family: 'Clash Display';
+    font-size: 16px;
+    line-height: 100%;
+    color: #2A254B;
+    margin-bottom: 16px;
 }
 
 .descriptionText {
-  font-family: 'Satoshi';
-  font-size: 16px;
-  line-height: 100%;
-  color: #505977;
-  width: 498px;
-  margin-bottom: 20px;
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 100%;
+    color: #505977;
+    width: 498px;
+    margin-bottom: 20px;
 }
 
 .descriptionList {
-  list-style-type: disc !important; /* Включает круглые маркеры */
-  padding-left: 25px;
+    list-style-type: disc !important;
+    padding-left: 25px;
 }
-
 
 .listItem {
-  font-family: 'Satoshi';
-  font-size: 16px;
-  line-height: 100%;
-  color: #505977;
-}
-
-.dimensions {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 100%;
+    color: #505977;
 }
 
 .dimensionsTop {
-  font-family: 'Clash Display';
-  font-size: 16px;
-  line-height: 100%;
-  color: #2A254B;
-  margin-bottom: 28px;
+    font-family: 'Clash Display';
+    font-size: 16px;
+    line-height: 100%;
+    color: #2A254B;
+    margin-bottom: 28px;
 }
 
 .metrics {
-  display: flex;
-  gap: 58px;
-  margin-bottom: 40px;
+    display: flex;
+    gap: 58px;
+    margin-bottom: 40px;
 }
 
 .height {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .heightTop {
-  font-family: 'Clash Display';
-  font-size: 14px;
-  line-height: 100%;
-  color: #2A254B;
+    font-family: 'Clash Display';
+    font-size: 14px;
+    line-height: 100%;
+    color: #2A254B;
 }
 
 .heightValue {
-  font-family: 'Satoshi';
-  font-size: 16px;
-  line-height: 100%;
-  color: #505977;
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 100%;
+    color: #505977;
 }
 
 .width {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .widthTop {
-  font-family: 'Clash Display';
-  font-size: 14px;
-  line-height: 100%;
-  color: #2A254B;
+    font-family: 'Clash Display';
+    font-size: 14px;
+    line-height: 100%;
+    color: #2A254B;
 }
 
 .widthValue {
-  font-family: 'Satoshi';
-  font-size: 16px;
-  line-height: 100%;
-  color: #505977;
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 100%;
+    color: #505977;
 }
 
 .depth {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .depthTop {
-  font-family: 'Clash Display';
-  font-size: 14px;
-  line-height: 100%;
-  color: #2A254B;
+    font-family: 'Clash Display';
+    font-size: 14px;
+    line-height: 100%;
+    color: #2A254B;
 }
 
-.depthValue{
-  font-family: 'Satoshi';
-  font-size: 16px;
-  line-height: 100%;
-  color: #505977;
+.depthValue {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 100%;
+    color: #505977;
 }
 
 .amount {
@@ -149,31 +154,31 @@
 }
 
 .amountTop {
-  font-family: 'Clash Display';
-  font-size: 16px;
-  line-height: normal;
-  color: #2A254B;    
+    font-family: 'Clash Display';
+    font-size: 16px;
+    line-height: normal;
+    color: #2A254B;    
 }
 
-.counterValue{
-  font-family: 'Satoshi';
-  font-size: 16px;
-  line-height: 100%;
-  color: #505977;
+.counterValue {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    line-height: 100%;
+    color: #505977;
 }
 
 .counterBtn {
-  font-family: 'Clash Display';
-  font-size: 16px;
-  line-height: 100%;
-  color: #2A254B;     
-  background: none;  
-  border: none;     
-  padding: 0;      
-  cursor: pointer; 
+    font-family: 'Clash Display';
+    font-size: 16px;
+    line-height: 100%;
+    color: #2A254B;     
+    background: none;  
+    border: none;     
+    padding: 0;      
+    cursor: pointer; 
 }    
 
-.counterControls{
+.counterControls {
     display: flex;
     justify-content: center;
     gap: 33px;
@@ -194,5 +199,5 @@
 }
 
 ul li {
- list-style: disc;
+    list-style: disc;
 }

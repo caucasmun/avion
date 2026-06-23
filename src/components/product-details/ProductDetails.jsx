@@ -1,37 +1,68 @@
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import CounterBtn from '../counter-btn/CounterBtn';
 import cn from './ProductDetails.module.css';
+import products from '../data/products.json';
+
 const ProductDetails = () => {
+  const { id } = useParams();
+  const product = products.find((item) => item.id === id);
+
+  const [quantity, setQuantity] = useState(1);
+
+  const handleIncrease = () => setQuantity(prev => prev + 1);
+  const handleDecrease = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
+
+  if (!product) {
+    return (
+      <section className={cn['product-details']}>
+        <div className="container">
+          <h2>Product not found</h2>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className={cn['product-details']}>
       <div className="container">
         <div className={cn.row}>
-          <img src={`${import.meta.env.BASE_URL}product-details/Image.png`} alt="" className={cn.left} />
+          <img 
+            src={`${import.meta.env.BASE_URL}${product.image}`} 
+            alt={product.title} 
+            className={cn.left} 
+          />
           <div className={cn.right}>
-            <p className={cn.top}>The Dandy Chair</p>
-            <p className={cn.price}>£250</p>
+            <p className={cn.top}>{product.title}</p>
+            <p className={cn.price}>{product.currency}{product.price}</p>
+            
             <div className={cn.description}>
               <p className={cn.descriptionTop}>Description</p>
-              <p className={cn.descriptionText}>A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+              <p className={cn.descriptionText}>{product.description}</p>
+              
               <ul className={cn.descriptionList}>
-                <li className={cn.listItem}>Premium material</li>
-                <li className={cn.listItem}>Handmade upholstery</li>
-                <li className={cn.listItem}>Quality timeless classic</li>
+                {product.features.map((feature, index) => (
+                  <li key={index} className={cn.listItem}>
+                    {feature}
+                  </li>
+                ))}
               </ul>
             </div> 
+
             <div className={cn.dimensions}>
               <p className={cn.dimensionsTop}>Dimensions</p>
               <div className={cn.metrics}>
                 <div className={cn.height}>
                   <p className={cn.heightTop}>Height</p>
-                  <p className={cn.heightValue}>110cm</p>
+                  <p className={cn.heightValue}>{product.dimensions.height}</p>
                 </div>
                 <div className={cn.width}>
                   <p className={cn.widthTop}>Width</p>
-                  <p className={cn.widthValue}>75cm</p>
+                  <p className={cn.widthValue}>{product.dimensions.width}</p>
                 </div>
                 <div className={cn.depth}>
                   <p className={cn.depthTop}>Depth</p>
-                  <p className={cn.depthValue}>50cm</p>
+                  <p className={cn.depthValue}>{product.dimensions.depth}</p>
                 </div>
               </div>
               
@@ -39,7 +70,11 @@ const ProductDetails = () => {
                 <div className={cn.counter}>
                   <div className={cn.counterInput}>
                     <p className={cn.amountTop}>Amount:</p>
-                    <CounterBtn />
+                    <CounterBtn 
+                      value={quantity} 
+                      onIncrease={handleIncrease} 
+                      onDecrease={handleDecrease} 
+                    />
                   </div>
                 </div>
                 
