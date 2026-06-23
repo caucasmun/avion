@@ -1,49 +1,28 @@
-import cn from './Nav.module.css'
+import cn from './Nav.module.css';
+import { Link } from 'react-router-dom'; 
 
 const Nav = () => {
-    const navItems = [
-        {
-            title: 'Plant pots',
-            href: ''
-        },
-        {
-            title: 'Ceramics',
-            href: ''
-        },
-        {
-            title: 'Tables',
-            href: ''
-        },
-        {
-            title: 'Chairs',
-            href: ''
-        },
-        {
-            title: 'Crockery',
-            href: ''
-        },
-        {
-            title: 'Tableware',
-            href: ''
-        },
-        {
-            title: 'Cutlery',
-            href: ''
-        },
-    ]
-    return(
-        <nav className={cn.nav}>
-            <ul className={cn.list}>
-                {navItems.map((item) => (
-                    <li key={item.href}>
-                        <a href={item.href} className={cn.link}>
-                            {item.title}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    )
-}
+  const navItems = [
+    { title: 'Home', href: '/avion' },
+    { title: 'Product List', href: '/avion/product-list' },
+    { title: 'About', href: '/avion/about' },
+    { title: 'Shopping', href: '/avion/shopping' },
+    { title: 'All Products', href: '/avion/all-products' },
+  ];
+
+  return (
+    <nav className={cn.nav}>
+      <ul className={cn.list}>
+        {navItems.map((item) => (
+          <li key={item.href}>
+            <Link to={item.href} className={cn.link}>
+              {item.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export default Nav;
