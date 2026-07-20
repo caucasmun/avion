@@ -4,6 +4,7 @@
     "title": "The Dandy chair",
     "price": 250,
     "currency": "£",
+    "category": "Furniture",
     "image": "product-catalog/Parent.png",
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
     "features": [
@@ -22,6 +23,7 @@
     "title": "Rustic Vase Set",
     "price": 155,
     "currency": "£",
+    "category": "Homeware",
     "image": "product-catalog/Parent (1).png",
     "description": "A beautiful set of three textured ceramic vases. Their organic shapes and earthy, rustic finish bring a warm, natural feel to modern and minimalist interiors alike.",
     "features": [
@@ -40,6 +42,7 @@
     "title": "The Silky Stool",
     "price": 125,
     "currency": "£",
+    "category": "Furniture",
     "image": "product-catalog/Parent (2).png",
     "description": "Compact yet highly elegant, this minimalist stool features a sleek dark metallic frame and a smooth, polished wooden top, making it an ideal accent piece or extra seating.",
     "features": [
@@ -58,6 +61,7 @@
     "title": "The Lucy Vase",
     "price": 95,
     "currency": "£",
+    "category": "Homeware",
     "image": "product-catalog/Parent (3).png",
     "description": "A tall, slender ceramic vase with a subtle stone-like texture. Perfect for displaying single stems or standing alone as an understated sculptural element.",
     "features": [
@@ -76,6 +80,7 @@
     "title": "The Hanging Pendant",
     "price": 175,
     "currency": "£",
+    "category": "Light fittings",
     "image": "product-catalog/Parent (4).png",
     "description": "An industrial-chic hanging pendant light with a wide matte black shade and a warm, golden interior that beautifully reflects and softens the light.",
     "features": [
@@ -94,6 +99,7 @@
     "title": "The Vintage Chair",
     "price": 210,
     "currency": "£",
+    "category": "Furniture",
     "image": "product-catalog/Parent (5).png",
     "description": "A classic wooden spindle-back chair with a distressed dark finish. It seamlessly combines traditional craftsmanship with a cozy, rustic aesthetic.",
     "features": [
@@ -112,6 +118,7 @@
     "title": "Triple Brass Lamp",
     "price": 320,
     "currency": "£",
+    "category": "Light fittings",
     "image": "product-catalog/Parent (6).png",
     "description": "A striking ceiling fixture featuring three cascading brass lampshades at varied heights, throwing a warm, luxurious glow over dining tables or kitchen islands.",
     "features": [
@@ -130,6 +137,7 @@
     "title": "Minimalist Ceramic Vase",
     "price": 85,
     "currency": "£",
+    "category": "Homeware",
     "image": "product-catalog/Parent (7).png",
     "description": "An architectural matte white ceramic vase with a smooth, continuous handle-like form. An absolute staple piece for modern aesthetic styling.",
     "features": [
@@ -148,6 +156,7 @@
     "title": "Modern Yellow Chairs",
     "price": 399,
     "currency": "£",
+    "category": "Sofas",
     "image": "product-catalog/Parent (8).png",
     "description": "A vibrant set of contemporary dining chairs with lightweight, durable molded shells in soft ochre yellow and pastel grey, supported by slim metallic legs.",
     "features": [

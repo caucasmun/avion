@@ -169,3 +169,26 @@
   border: none;            
   cursor: pointer;          
 }
+
+.emptyCart {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 18px;
+  color: #706D6B;
+  padding: 48px 0;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  color: #706D6B;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 4px;
+}
+
+.removeBtn:hover {
+  color: #2A254B;
+}

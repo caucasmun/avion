@@ -24,8 +24,29 @@
     gap: 16px;
 }
 
-.cart{
+.cartLink {
+    position: relative;
+    display: flex;
+}
+
+.cart {
     cursor: pointer;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    background-color: #2A254B;
+    color: #fff;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 9px;
 }
 
 .user{

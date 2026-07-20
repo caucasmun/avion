@@ -1,17 +1,27 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import CounterBtn from '../counter-btn/CounterBtn';
 import cn from './ProductDetails.module.css';
 import products from '../data/products.json';
+import { addToCart } from '../../store/cartSlice';
 
 const ProductDetails = () => {
   const { id } = useParams();
+  const dispatch = useDispatch();
   const product = products.find((item) => item.id === id);
 
   const [quantity, setQuantity] = useState(1);
+  const [added, setAdded] = useState(false);
 
-  const handleIncrease = () => setQuantity(prev => prev + 1);
-  const handleDecrease = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
+  const handleIncrease = () => setQuantity((prev) => prev + 1);
+  const handleDecrease = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ ...product, quantity }));
+    setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
+  };
 
   if (!product) {
     return (
@@ -27,19 +37,19 @@ const ProductDetails = () => {
     <section className={cn['product-details']}>
       <div className="container">
         <div className={cn.row}>
-          <img 
-            src={`${import.meta.env.BASE_URL}${product.image}`} 
-            alt={product.title} 
-            className={cn.left} 
+          <img
+            src={`${import.meta.env.BASE_URL}${product.image}`}
+            alt={product.title}
+            className={cn.left}
           />
           <div className={cn.right}>
             <p className={cn.top}>{product.title}</p>
             <p className={cn.price}>{product.currency}{product.price}</p>
-            
+
             <div className={cn.description}>
               <p className={cn.descriptionTop}>Description</p>
               <p className={cn.descriptionText}>{product.description}</p>
-              
+
               <ul className={cn.descriptionList}>
                 {product.features.map((feature, index) => (
                   <li key={index} className={cn.listItem}>
@@ -47,7 +57,7 @@ const ProductDetails = () => {
                   </li>
                 ))}
               </ul>
-            </div> 
+            </div>
 
             <div className={cn.dimensions}>
               <p className={cn.dimensionsTop}>Dimensions</p>
@@ -65,20 +75,22 @@ const ProductDetails = () => {
                   <p className={cn.depthValue}>{product.dimensions.depth}</p>
                 </div>
               </div>
-              
+
               <div className={cn.amount}>
                 <div className={cn.counter}>
                   <div className={cn.counterInput}>
                     <p className={cn.amountTop}>Amount:</p>
-                    <CounterBtn 
-                      value={quantity} 
-                      onIncrease={handleIncrease} 
-                      onDecrease={handleDecrease} 
+                    <CounterBtn
+                      value={quantity}
+                      onIncrease={handleIncrease}
+                      onDecrease={handleDecrease}
                     />
                   </div>
                 </div>
-                
-                <button className={cn.button}>Add to cart</button>
+
+                <button className={cn.button} type="button" onClick={handleAddToCart}>
+                  {added ? 'Added to cart!' : 'Add to cart'}
+                </button>
               </div>
 
             </div>
